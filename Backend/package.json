@@ -7,6 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,7 +20,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.0",
-    "nodemon": "^3.1.9"
+    "mongoose": "^8.9.0"
   }
 }

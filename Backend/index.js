@@ -15,13 +15,13 @@ dotenv.config();
 
 const port = process.env.Port || 4000;
 
-const URI = process.env.MongoDBURI;
+const URI = process.env.DATABASE_URL;
 //connect to mongodb
 try{
     mongoose.connect(URI);
-    console.log("Connected to mongoose")
+    console.log("Connected to MongoDB Atlas")
 } catch (error) {
-    console.log("Error: ", error)
+    console.log("Database connection error:", error)
 }
 
 //defining routes

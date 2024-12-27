@@ -9,7 +9,10 @@ const userRoute = require("./routes/user_route.js")
 
 const app = express();
 
-app.use(cors());
+
+app.use(cors({
+    origin: 'https://amit-makhloga.github.io',
+}));
 app.use(express.json());
 dotenv.config();
 

@@ -26,7 +26,7 @@ function Course() {
           We’re thrilled to have you here. Explore a world of endless possibilities, where every moment brings a new adventure. Dive into stories, experiences, and opportunities crafted just for you. Let’s make this journey unforgettable together!
           Embrace the excitement as you embark on a journey filled with incredible discoveries and growth. Each step offers something new, and we’re here to guide you every step of the way. Join us and let’s create amazing memories together!
           </p>
-          <Link to='/'> 
+          <Link to='/BookStore'> 
             <button className='bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 mt-6'>Back</button>
           </Link>
         </div>

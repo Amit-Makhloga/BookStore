@@ -71,7 +71,7 @@ function Signup() {
             <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
-                to={"/"}
+                to={"/BookStore"}
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               >
                 ✕
@@ -129,7 +129,7 @@ function Signup() {
               {/* signup */}
               <div className="mt-4">
                 <button className="w-80 p-3 bg-green-600 rounded-md border border-black text-white hover:bg-green-400">
-                  <Link to={"/signup"}>Sign up</Link>
+                  <Link to={"/BookStore/signup"}>Sign up</Link>
                 </button>
               </div>
 

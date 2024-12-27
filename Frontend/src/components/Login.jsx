@@ -56,7 +56,7 @@ function Login() {
               ✕
             </Link> */}
             <Link
-              to="/"
+              to="/BookStore"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
               onClick={() => document.getElementById("my_modal_3").close()}
             >

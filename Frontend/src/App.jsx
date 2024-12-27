@@ -6,6 +6,29 @@ import Signup from "./components/Signup";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
 
+// function App() {
+//   const [authUser, setAuthUser] = useAuth();
+//   console.log(authUser);
+//   return (
+//     <>
+//       <div className="dark:bg-slate-900 dark:text-white">
+//         <Routes>
+//           <Route path="/" element={<Home />}></Route>
+//           <Route
+//             path="/course"
+//             element={authUser ? <Courses /> : <Navigate to="/signup" />}
+//           />
+//           <Route path="/signup" element={<Signup />}>
+//             {" "}
+//           </Route>
+//         </Routes>
+//         <Toaster />
+//       </div>
+//     </>
+//   );
+// }
+
+// export default App;
 function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
@@ -13,14 +36,12 @@ function App() {
     <>
       <div className="dark:bg-slate-900 dark:text-white">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/BookStore" element={<Home />} />
           <Route
-            path="/course"
-            element={authUser ? <Courses /> : <Navigate to="/signup" />}
+            path="/BookStore/course"
+            element={authUser ? <Courses /> : <Navigate to="/BookStore/signup" />}
           />
-          <Route path="/signup" element={<Signup />}>
-            {" "}
-          </Route>
+          <Route path="/BookStore/signup" element={<Signup />} />
         </Routes>
         <Toaster />
       </div>
